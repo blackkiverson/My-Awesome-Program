@@ -1,0 +1,15 @@
+C:\Users\samue\Desktop\My Awesome Program\bin\Debug\net7.0\My Awesome Program.exe
+C:\Users\samue\Desktop\My Awesome Program\bin\Debug\net7.0\My Awesome Program.deps.json
+C:\Users\samue\Desktop\My Awesome Program\bin\Debug\net7.0\My Awesome Program.runtimeconfig.json
+C:\Users\samue\Desktop\My Awesome Program\bin\Debug\net7.0\My Awesome Program.dll
+C:\Users\samue\Desktop\My Awesome Program\bin\Debug\net7.0\My Awesome Program.pdb
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.csproj.AssemblyReference.cache
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.AssemblyInfoInputs.cache
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.AssemblyInfo.cs
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.csproj.CoreCompileInputs.cache
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.dll
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\refint\My Awesome Program.dll
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.pdb
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\My Awesome Program.genruntimeconfig.cache
+C:\Users\samue\Desktop\My Awesome Program\obj\Debug\net7.0\ref\My Awesome Program.dll
