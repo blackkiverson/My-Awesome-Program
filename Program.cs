@@ -10,7 +10,7 @@
             // Declaring a Variable
             string name = "John";
             Console.WriteLine("My nme is" + " " + name);
-            // Double for decimal point numbers
+            // Double for decimal point numbers and value ends with a D
             double myDoubleNum = 67.9D;
             myDoubleNum = 09028570136D;
             Console.WriteLine(myDoubleNum);
