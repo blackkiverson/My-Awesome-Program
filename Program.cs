@@ -8,6 +8,7 @@
             Console.WriteLine("Hello, World!");
             
             // Declaring a Variable
+            // String for words or letters
             string name = "John";
             Console.WriteLine("My nme is" + " " + name);
             // Double for decimal point numbers and value ends with a D
@@ -23,6 +24,11 @@
             // Bool for true or false value
             bool myBool = true;
             Console.WriteLine(myBool);
+
+            // Declaring a Constant Variable
+            const int myOneNum = 15;
+            // myOneNum = 20; // error
+            Console.WriteLine(myOneNum);
 
             /* Waiting for the user to press a key before closing the console window. */
             Console.ReadKey();
