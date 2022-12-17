@@ -190,7 +190,7 @@
             Console.WriteLine("It took you " + attempts + " attempts to roll a six.");
 
             Random numberGenerator = new Random();
-            int rollOne = 0;
+            int rollOne = 1;
             int rollTwo = 0;
             int rollAttempts = 0;
 
@@ -203,6 +203,7 @@
                 rollTwo = numberGenerator.Next(1, 7);
                 Console.WriteLine("Dice 1: " + rollOne);
                 Console.WriteLine("Dice 2: " + rollTwo);
+                Console.WriteLine();
                 rollAttempts++;
             }
 
