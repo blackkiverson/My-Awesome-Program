@@ -209,6 +209,19 @@
 
             Console.WriteLine("It took you " + rollAttempts + " attempts to roll two of a kind.");
 
+            // Arrays
+            string[] favMovies = {
+                "Lord of the Rings",
+                "Fight Club",
+                "Interstellar",
+                "Gladiator"
+            };
+            for (int i = 0; i < favMovies.Length; i++)
+            {
+                int rank = i + 1;
+                Console.WriteLine(rank + ". " + favMovies[i]);
+            }
+
             /* Waiting for the user to press a key before closing the console window. */
             Console.ReadKey();
         }
