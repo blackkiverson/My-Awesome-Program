@@ -158,6 +158,55 @@
                     break;
             }
 
+            // Loop
+            // For Loop
+            Console.Write("How many cool numbers do you want: ");
+
+            int count = Convert.ToInt32(Console.ReadLine());
+
+            for (
+            /* before */int i = 1; 
+            /* condition */i <= count; 
+            /* after */ i++) {
+                double theResult = Math.Pow(2, i);
+                Console.WriteLine(theResult);
+            }
+
+            // While Loop
+            /* Creating a new instance of the Random class. */
+            Random numberGen = new Random();
+            int roll = 0;
+            int attempts = 0;
+
+            Console.WriteLine("Press enter to roll the dice.");
+
+            while (roll != 6) {
+                Console.ReadKey();
+                roll = numberGen.Next(1, 7);
+                Console.WriteLine("You rolled " + roll);
+                attempts++;
+            }
+
+            Console.WriteLine("It took you " + attempts + " attempts to roll a six.");
+
+            Random numberGenerator = new Random();
+            int rollOne = 0;
+            int rollTwo = 0;
+            int rollAttempts = 0;
+
+            Console.WriteLine("Press enter to roll two of a kind dice.");
+
+            while (rollOne != rollTwo)
+            {
+                Console.ReadKey();
+                rollOne = numberGenerator.Next(1, 7);
+                rollTwo = numberGenerator.Next(1, 7);
+                Console.WriteLine("Dice 1: " + rollOne);
+                Console.WriteLine("Dice 2: " + rollTwo);
+                rollAttempts++;
+            }
+
+            Console.WriteLine("It took you " + rollAttempts + " attempts to roll two of a kind.");
 
             /* Waiting for the user to press a key before closing the console window. */
             Console.ReadKey();
