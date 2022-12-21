@@ -222,8 +222,113 @@
                 Console.WriteLine(rank + ". " + favMovies[i]);
             }
 
+            // Using Classes (Class at the bottom)
+            Cat cat01 = new Cat();
+
+            cat01.name = "Cat Stevens";
+            cat01.age = 1;
+            cat01.Meow();
+
+            Cat cat02 = new Cat();
+
+            cat02.name = "Meowly Cyrus";
+            cat02.age = 12;
+            cat02.Meow();
+
+            Wizard wizard01 = new Wizard("Parry Hopper", "Unexpected Patronum");
+
+            wizard01.CastSpell();
+            wizard01.CastSpell();
+            wizard01.CastSpell();
+
+            Console.WriteLine("Experience: " + wizard01.experience);
+            Console.WriteLine("Spell slots: " + wizard01.spellSlots);
+
+            wizard01.Meditate();
+            wizard01.CastSpell();
+            wizard01.CastSpell();
+
+            Wizard wizard02 = new Wizard("Glindulf Merlinson", "Abragatabra");
+
+            wizard02.CastSpell();
+
+            Console.WriteLine("Experience: " + wizard01.experience);
+
+            Console.WriteLine(Wizard.Count);
+
             /* Waiting for the user to press a key before closing the console window. */
             Console.ReadKey();
         }
+
+        // Methods
+        static void MeetAlien() {
+            Random numGen = new Random();
+
+            string alienName = "x-" + numGen.Next(10, 9999);
+            int alienAge = numGen.Next(10, 500);
+
+            Console.WriteLine("Hi, I'm " + alienName);
+            Console.WriteLine("I'm " + alienAge + " years old.");
+            Console.WriteLine("Oh, and I'm an alien.");
+            Console.WriteLine("...............................");
+        }
+
+        static void Square(int number) {
+            int result = number * number;
+
+            Console.WriteLine("The Square of " + number + " is equal to " + result);
+        }
+
+        static int Multiply(int num01, int num02) {
+            int result = num01 * num02;
+            return result;
+        }
+    }
+    class Cat {
+        public string? name;
+        public int age;
+        
+        public void Meow() {
+            Console.WriteLine(name + " says Meow");
+        }
+    }
+
+    class Wizard {
+        public string name;
+        public string favouriteSpell;
+        public int spellSlots;
+        public float experience;
+
+        /* Static is a modifier that allows the variable to be accessed without creating an instance of
+       the class. */
+        public static int Count;
+
+        // creating a class constructor to create a wizard.
+        public Wizard(string _name, string _favouriteSpell) {
+            name = _name;
+            favouriteSpell = _favouriteSpell;
+            spellSlots = 2;
+            experience = 0f;
+            
+            Count++;
+        }
+
+        public void CastSpell() {
+            if (spellSlots > 0) {
+                Console.WriteLine(name + " casts " + favouriteSpell);
+                spellSlots--;
+                experience += 0.3f;
+            } else {
+                Console.WriteLine(name + " is out of spell slots.");
+            }
+            
+        }
+
+        public void Meditate() {
+            Console.WriteLine(name + " Meditates to regain spell slots.");
+            spellSlots = 2;
+        }
+
+        
     }
 }
